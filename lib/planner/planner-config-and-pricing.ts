@@ -7,7 +7,26 @@
 // 4) Recommendation logic
 // 5) Pricing and range calculator
 // 6) Installment calculator
-// No external deps. No tech mentions in user facing copy.
+// No tech mentions in user facing copy.
+//
+// Tier prices live in lib/planner-config.ts (single source of truth).
+// They are re-exported here so the API and email templates use the same numbers
+// as the planner UI.
+import { TIERS, type TierId } from "@/lib/planner-config";
+
+export {
+  TIERS,
+  ADD_ONS,
+  PLATFORM_TYPES,
+  formatMYR,
+  formatMYRRange,
+} from "@/lib/planner-config";
+export type {
+  TierId,
+  TierConfig,
+  AddOn,
+  PlatformId,
+} from "@/lib/planner-config";
 
 // --------------------------------------
 // 1) TYPES
@@ -283,10 +302,17 @@ export function recommendPackage(ans: PlannerAnswers): PackageType {
 // --------------------------------------
 // 5) PRICING ENGINE
 // --------------------------------------
+// PackageType "custom" maps to the planner's "advanced" tier.
+const PACKAGE_TO_TIER: Record<PackageType, TierId> = {
+  landing: "landing",
+  business: "business",
+  custom: "advanced",
+};
+
 const BASES: Record<PackageType, number> = {
-  landing: 1500,
-  business: 3000,
-  custom: 5000,
+  landing: TIERS[PACKAGE_TO_TIER.landing].basePrice,
+  business: TIERS[PACKAGE_TO_TIER.business].basePrice,
+  custom: TIERS[PACKAGE_TO_TIER.custom].basePrice,
 };
 
 interface PricingContext {

@@ -412,7 +412,7 @@ export default function ServicesPage() {
                   Price starts from
                 </div>
                 <div className="text-accent/50 text-2xl font-semibold">
-                  RM1,500
+                  RM3,000
                 </div>
               </div>
               <PrimaryCTA href="/planner?tier=business" className="min-w-[50%]">
