@@ -17,7 +17,8 @@ export default function MainViewport({
     }
   }, [pathname]);
 
-  // Use full-screen min height for most pages, but let planner fit content; apply fade animation
-  const cls = `${isPlanner ? "" : "min-h-screen"} page-fade`;
+  // Use full-screen min height for most pages, but let planner fit content; apply fade animation.
+  // Mobile bottom padding = WhatsApp FAB height (56px) + 16px so the FAB never covers content.
+  const cls = `${isPlanner ? "" : "min-h-screen"} pb-[72px] md:pb-0 page-fade`;
   return <main className={cls}>{children}</main>;
 }

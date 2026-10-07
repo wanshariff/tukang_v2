@@ -67,10 +67,11 @@ export default function HomePageClient({ children }: HomePageClientProps) {
     };
   }, []);
 
-  // Animation words for the homepage headline
+  // Animation words for the homepage headline.
+  // Dimmest line must stay >= 3:1 against the hero background (large text).
   const homepageHeadlineWords = [
-    { text: "GET YOUR", color: "text-accent/20", delay: 0 },
-    { text: "BUSINESS ONLINE", color: "text-accent/40", delay: 300 },
+    { text: "GET YOUR", color: "text-accent/50", delay: 0 },
+    { text: "BUSINESS ONLINE", color: "text-accent/60", delay: 300 },
     { text: "THE RIGHT WAY", color: "text-accent/80", delay: 700 },
   ];
 
