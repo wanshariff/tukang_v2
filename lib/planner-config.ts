@@ -26,7 +26,7 @@ export const TIERS: Record<TierId, TierConfig> = {
   },
   business: {
     id: "business",
-    name: "Professional Business Website",
+    name: "Professional Website",
     basePrice: 3000,
     basePriceRange: [3000, 5000],
     timeline: undefined,
@@ -81,7 +81,7 @@ export const ADD_ONS: AddOn[] = [
     priceRange: [500, 1200],
     tiers: ["landing"],
     description:
-      "We write the content for your landing page, structured to convert visitors into customers.",
+      "We write your page copy from scratch, structured to bring in enquiries. Polishing your own copy is free.",
   },
   {
     id: "analytics-landing",

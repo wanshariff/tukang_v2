@@ -17,6 +17,7 @@ interface CTAButtonProps {
   className?: string;
   external?: boolean;
   disabled?: boolean;
+  "aria-describedby"?: string;
 }
 
 // Base styles for consistency
@@ -69,6 +70,7 @@ export function CTAButton({
   className = "",
   external = false,
   disabled = false,
+  "aria-describedby": ariaDescribedBy,
 }: CTAButtonProps) {
   const styles = `
     ${baseStyles}
@@ -126,6 +128,7 @@ export function CTAButton({
       onClick={onClick}
       disabled={disabled}
       type={type}
+      aria-describedby={ariaDescribedBy}
     >
       {content}
     </button>

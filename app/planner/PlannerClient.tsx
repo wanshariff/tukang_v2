@@ -190,7 +190,7 @@ export default function PlannerClient() {
     <div className="min-h-fit bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         <header className="mb-6">
-          <div className="text-sm text-gray-400">Step {step} of 3</div>
+          <div className="text-sm text-gray-400">Step {step - 1} of 2</div>
           <h1 className="text-2xl lg:text-3xl font-bold text-accent/40">
             PROJECT SCOPE PLANNER
           </h1>
@@ -226,7 +226,7 @@ export default function PlannerClient() {
                     {tier === "landing"
                       ? "Customize Your Landing Page"
                       : tier === "business"
-                      ? "Customize Your Business Website"
+                      ? "Customize Your Professional Website"
                       : "Configure Your Custom System"}
                   </h2>
                   {tier !== "advanced" && (
@@ -356,11 +356,24 @@ export default function PlannerClient() {
                   </div>
                 </div>
 
-                <div className="mt-5 flex items-center justify-end">
+                <div className="mt-5 flex flex-wrap items-center justify-end gap-3">
+                  {tier === "advanced" && !selectedPlatform && (
+                    <p
+                      id="proceed-hint"
+                      className="text-sm text-slate-300"
+                      role="status"
+                    >
+                      Choose a platform type above to continue.
+                    </p>
+                  )}
                   <PrimaryCTA
                     onClick={() => setStep(3)}
                     disabled={tier === "advanced" && !selectedPlatform}
-                    aria-disabled={tier === "advanced" && !selectedPlatform}
+                    aria-describedby={
+                      tier === "advanced" && !selectedPlatform
+                        ? "proceed-hint"
+                        : undefined
+                    }
                   >
                     Proceed to Contact & Estimate
                   </PrimaryCTA>

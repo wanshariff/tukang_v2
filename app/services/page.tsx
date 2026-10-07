@@ -2,6 +2,11 @@
 import React from "react";
 import { PrimaryCTA } from "../components/CTAButton";
 import { DeliverableIcon } from "../components/Icons";
+import { ADD_ONS, type TierId } from "@/lib/planner-config";
+
+// Add-on chips come straight from the planner config so names always match.
+const addOnsFor = (tier: TierId) =>
+  ADD_ONS.filter((a) => a.tiers.includes(tier));
 
 // Note: Since this is a client component, metadata should be handled in layout.tsx or parent server component
 // For analytics tracking, the page title is "Services - Web Design & Development"
@@ -265,15 +270,14 @@ export default function ServicesPage() {
                         AVAILABLE ADD-ONS
                       </h4>
                       <div className="flex flex-wrap gap-2 mt-2">
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Brand Identity Starter
-                        </span>
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Content and Copywriting
-                        </span>
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Motion
-                        </span>
+                        {addOnsFor("landing").map((a) => (
+                          <span
+                            key={a.id}
+                            className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full"
+                          >
+                            {a.label}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -394,15 +398,14 @@ export default function ServicesPage() {
                         AVAILABLE ADD-ONS
                       </h4>
                       <div className="flex flex-wrap gap-2 mt-2">
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Lite Pack Design System
-                        </span>
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Analytics and SEO
-                        </span>
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Online Store Setup
-                        </span>
+                        {addOnsFor("business").map((a) => (
+                          <span
+                            key={a.id}
+                            className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full"
+                          >
+                            {a.label}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -522,15 +525,14 @@ export default function ServicesPage() {
                         AVAILABLE ADD-ONS
                       </h4>
                       <div className="flex flex-wrap gap-2 mt-2">
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Payments and Subscriptions
-                        </span>
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Analytics and Experiments
-                        </span>
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Accessibility Review
-                        </span>
+                        {addOnsFor("advanced").map((a) => (
+                          <span
+                            key={a.id}
+                            className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full"
+                          >
+                            {a.label}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
