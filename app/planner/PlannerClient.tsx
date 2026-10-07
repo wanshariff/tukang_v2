@@ -179,7 +179,7 @@ export default function PlannerClient() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Book a 15min discovery
+            Book a 30-minute discovery
           </a>
         </div>
       </div>

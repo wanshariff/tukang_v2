@@ -220,7 +220,7 @@ export default function ContactPage() {
                         Select an option
                       </option>
                       <option>Landing Page</option>
-                      <option>Business Website</option>
+                      <option>Professional Website</option>
                       <option>Custom Web System</option>
                       <option>Not sure</option>
                     </select>
@@ -336,14 +336,14 @@ export default function ContactPage() {
                   Request a short call
                 </h3>
                 <p className="text-gray-300 mb-3">
-                  Ask for a 15 minute discovery call. We will send a calendar
+                  Ask for a 30-minute discovery call. We will send a calendar
                   link.
                 </p>
                 <SecondaryCTA
                   href="https://calendar.app.google/SrBsskVewCfjWUv16"
                   external
                 >
-                  Request a 15 minute call
+                  Request a 30-minute call
                 </SecondaryCTA>
               </div>
 
@@ -356,7 +356,8 @@ export default function ContactPage() {
                   <li>
                     We review your message and reply within 1 business day.
                   </li>
-                  <li>If helpful, we’ll propose a 15 minute discovery call.</li>
+                  <li>If helpful, we’ll propose a 30-minute discovery call.</li>
+                  <li>Your timeline starts once we have all your content.</li>
                   <li>
                     You receive a plan, timeline, and a fixed quote.
                     Installments are available.
