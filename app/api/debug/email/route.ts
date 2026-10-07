@@ -4,7 +4,7 @@ import { sendEmail } from "@/lib/email";
 export async function GET() {
   try {
     const result = await sendEmail({
-      to: process.env.CONTACT_TO || "studio@tukang.design",
+      to: process.env.CONTACT_TO || "tadalstudio.my@gmail.com",
       subject: `Email Debug Test ${new Date().toISOString()}`,
       text: "This is a debug test from /api/debug/email",
     });

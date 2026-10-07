@@ -197,7 +197,7 @@ export default function ContactPage() {
                       id="phone"
                       name="phone"
                       className="w-full bg-olive-900/60 border border-olive-700/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-accent focus:ring-1 focus:ring-accent transition-colors focus-ring"
-                      placeholder="e.g. +60 17-406 2788"
+                      placeholder="e.g. +60 19-417 6182"
                     />
                   </div>
 
@@ -323,10 +323,10 @@ export default function ContactPage() {
                   Email
                 </h3>
                 <a
-                  href="mailto:hello@tadal.studio"
+                  href="mailto:tadalstudio.my@gmail.com"
                   className="text-accent hover:text-accent/80 transition-colors"
                 >
-                  hello@tadal.studio
+                  tadalstudio.my@gmail.com
                 </a>
               </div>
 

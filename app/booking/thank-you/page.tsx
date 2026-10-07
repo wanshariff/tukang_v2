@@ -189,7 +189,7 @@ export default function ThankYouPage() {
                 <div className="bg-brown-500/10 rounded-xl p-6 border border-brown-500/20">
                   <div className="text-brown-700 mb-3">📧</div>
                   <h4 className="font-medium text-brown-700 mb-2">Email</h4>
-                  <p className="text-sm text-gray-300">studio@tukang.design</p>
+                  <p className="text-sm text-gray-300">tadalstudio.my@gmail.com</p>
                   <p className="text-xs text-gray-400 mt-1">
                     Response within 4 hours
                   </p>
@@ -198,7 +198,7 @@ export default function ThankYouPage() {
                 <div className="bg-brown-500/10 rounded-xl p-6 border border-brown-500/20">
                   <div className="text-brown-700 mb-3">📱</div>
                   <h4 className="font-medium text-brown-700 mb-2">WhatsApp</h4>
-                  <p className="text-sm text-gray-300">+60 12-345 6789</p>
+                  <p className="text-sm text-gray-300">+60 19-417 6182</p>
                   <p className="text-xs text-gray-400 mt-1">Quick messaging</p>
                 </div>
 

@@ -14,7 +14,7 @@ export const organizationSchema = () => ({
     {
       "@type": "ContactPoint",
       contactType: "customer support",
-      email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL || "studio@tadalstudio.com",
+      email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL || "tadalstudio.my@gmail.com",
       areaServed: ["MY", "APAC", "GLOBAL"],
       availableLanguage: ["en", "ms"],
     },
@@ -159,7 +159,7 @@ export function createBusinessStructuredData() {
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      email: "studio@tukang.design",
+      email: "tadalstudio.my@gmail.com",
       contactType: "customer service",
       availableLanguage: ["English"],
     },

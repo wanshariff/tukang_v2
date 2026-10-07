@@ -222,14 +222,14 @@ function ScheduleDiscoveryContent() {
               </h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm">
                 <a
-                  href="mailto:hello@tadal.studio"
+                  href="mailto:tadalstudio.my@gmail.com"
                   className="text-accent hover:text-accent/80 transition-colors"
                 >
-                  hello@tadal.studio
+                  tadalstudio.my@gmail.com
                 </a>
                 <span className="hidden sm:block text-gray-400">•</span>
                 <a
-                  href="https://wa.me/60174062788"
+                  href="https://wa.me/60194176182"
                   className="text-accent hover:text-accent/80 transition-colors"
                 >
                   📱 WhatsApp Support

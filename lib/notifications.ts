@@ -93,9 +93,9 @@ export async function sendEstimateNotification(data: any) {
       process.env.SMTP_FROM ||
       process.env.SMTP_USER ||
       process.env.EMAIL_FROM ||
-      `"Project Estimator" <studio@tukang.design>`,
+      `"Project Estimator" <tadalstudio.my@gmail.com>`,
     to:
-      process.env.CONTACT_TO || process.env.SMTP_USER || "studio@tukang.design",
+      process.env.CONTACT_TO || process.env.SMTP_USER || "tadalstudio.my@gmail.com",
     subject: `New Project Estimate: ${data.name} — ${currencyLabel} ${titleTotal}`,
     text,
     html,

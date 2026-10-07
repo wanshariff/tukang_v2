@@ -81,7 +81,7 @@ export default function BookingSteps() {
           </div>
           <div className="flex gap-3">
             <SecondaryCTA href="/contact">Contact Us</SecondaryCTA>
-            <WhatsAppCTA href="https://wa.me/60174062788" external>
+            <WhatsAppCTA href="https://wa.me/60194176182" external>
               WhatsApp Us
             </WhatsAppCTA>
           </div>

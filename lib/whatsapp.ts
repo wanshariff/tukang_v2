@@ -1,4 +1,4 @@
-export const WA_NUMBER_INTL = "60174062788"; // +60 17 406 2788
+export const WA_NUMBER_INTL = "60194176182"; // +60 19 417 6182
 
 const PAGE_NAMES: Record<string, string> = {
   "": "Home",

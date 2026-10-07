@@ -136,7 +136,7 @@ export async function POST(request: Request) {
 
       await sendEmail({
         from: process.env.SMTP_FROM || process.env.SMTP_USER || process.env.EMAIL_FROM || email,
-        to: process.env.CONTACT_TO || process.env.SMTP_USER || "studio@tukang.design",
+        to: process.env.CONTACT_TO || process.env.SMTP_USER || "tadalstudio.my@gmail.com",
         subject: `New Lead Capture - ${submissionId}`,
         html: `
           <h2>New Lead Capture</h2>

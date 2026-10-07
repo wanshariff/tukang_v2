@@ -313,8 +313,8 @@ async function handleGoalBasedBooking(bookingData) {
 
     // Build and send internal + optional client estimate emails
     try {
-      const to = process.env.CONTACT_TO || process.env.SMTP_USER || "studio@tukang.design";
-      const from = process.env.SMTP_FROM || process.env.SMTP_USER || process.env.EMAIL_FROM || "studio@tukang.design";
+      const to = process.env.CONTACT_TO || process.env.SMTP_USER || "tadalstudio.my@gmail.com";
+      const from = process.env.SMTP_FROM || process.env.SMTP_USER || process.env.EMAIL_FROM || "tadalstudio.my@gmail.com";
       const currencyLabel = bookingData.selectedRegion === "MY" ? "RM" : "USD";
 
       const estimate = buildEstimationEmail({ bookingData, submissionId, websiteType, recommendedTier, currencyLabel });
@@ -498,8 +498,8 @@ async function handleServiceBasedBooking(bookingData) {
 
     // Build and send internal + optional client estimate emails for service flow
     try {
-      const to = process.env.CONTACT_TO || process.env.SMTP_USER || "studio@tukang.design";
-      const from = process.env.SMTP_FROM || process.env.SMTP_USER || process.env.EMAIL_FROM || "studio@tukang.design";
+      const to = process.env.CONTACT_TO || process.env.SMTP_USER || "tadalstudio.my@gmail.com";
+      const from = process.env.SMTP_FROM || process.env.SMTP_USER || process.env.EMAIL_FROM || "tadalstudio.my@gmail.com";
       const currency = currencyInfo.symbol || "";
 
       const estimate = buildEstimationEmail({ bookingData, submissionId, websiteType: bookingData.service.name, recommendedTier: null, currencyLabel: currency, isServiceFlow: true, estimatedPriceObj: sanityDocument.estimatedPrice });
