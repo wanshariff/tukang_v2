@@ -222,10 +222,10 @@ function ScheduleDiscoveryContent() {
               </h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm">
                 <a
-                  href="mailto:hello@tukangdesign.com"
+                  href="mailto:hello@tadal.studio"
                   className="text-accent hover:text-accent/80 transition-colors"
                 >
-                  📧 hello@tukangdesign.com
+                  hello@tadal.studio
                 </a>
                 <span className="hidden sm:block text-gray-400">•</span>
                 <a

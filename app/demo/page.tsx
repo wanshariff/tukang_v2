@@ -5,10 +5,10 @@ export const metadata = {
   title: "Component Demo | TADAL STUDIO",
   description: "A consolidated showcase of site components for review.",
   openGraph: {
-    images: ["https://tukang.design/tukang-design-social-share.jpg"],
+    images: ["/tadal-social-share.jpg"],
   },
   twitter: {
-    images: ["https://tukang.design/tukang-design-social-share.jpg"],
+    images: ["/tadal-social-share.jpg"],
   },
 };
 

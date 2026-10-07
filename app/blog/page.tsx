@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "/blog",
     type: "website",
     images: [
-      { url: "/tukang-design-social-share.jpg", width: 1200, height: 630 },
+      { url: "/tadal-social-share.jpg", width: 1200, height: 630 },
     ],
   },
   twitter: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Web Design Insights | TADAL STUDIO",
     description:
       "Practical web design and business growth tips for Malaysian SMEs.",
-    images: ["/tukang-design-social-share.jpg"],
+    images: ["/tadal-social-share.jpg"],
   },
 };
 

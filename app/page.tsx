@@ -8,15 +8,16 @@ import HomePageClient from "./components/homepage-client";
 export const metadata: Metadata = {
   title: "End-to-End Web Design & Development | TADAL STUDIO",
   description:
-    "Seamless, end-to-end web design and development for SMEs. Strategy, design, code, and launch handled by one expert team.",
+    "Websites for Malaysian businesses. Strategy, design and code in one team, with the price and launch date agreed before you pay.",
   openGraph: {
     title: "End-to-End Web Design & Development | TADAL STUDIO",
-    description: "Seamless, end-to-end web design and development for SMEs.",
+    description:
+      "Websites for Malaysian businesses. Strategy, design and code in one team, with the price and launch date agreed before you pay.",
     url: "/",
     type: "website",
     images: [
       {
-        url: "/tukang-design-social-share.jpg",
+        url: "/tadal-social-share.jpg",
         width: 1200,
         height: 630,
         alt: "TADAL STUDIO – End-to-End Web Design & Development",
@@ -26,8 +27,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "End-to-End Web Design & Development | TADAL STUDIO",
-    description: "Seamless, end-to-end web design and development for SMEs.",
-    images: ["/tukang-design-social-share.jpg"],
+    description:
+      "Websites for Malaysian businesses. Strategy, design and code in one team, with the price and launch date agreed before you pay.",
+    images: ["/tadal-social-share.jpg"],
   },
   alternates: { canonical: "/" },
 };

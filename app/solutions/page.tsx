@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "Technologies we support, payment options, and common problems we solve for web projects.",
   openGraph: {
-    images: ["https://tukang.design/tukang-design-social-share.jpg"],
+    images: ["/tadal-social-share.jpg"],
   },
 };
 

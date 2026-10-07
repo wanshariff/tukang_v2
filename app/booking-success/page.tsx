@@ -130,7 +130,7 @@ function BookingSuccessContent() {
               WhatsApp!
             </p>
             <a
-              href="https://wa.me/60174062788?text=Hi%20Tukang%20Design!%20I%20just%20submitted%20a%20booking%20request%20and%20have%20a%20few%20questions%20about%20my%20project.%20Looking%20forward%20to%20hearing%20from%20you!"
+              href="https://wa.me/60174062788?text=Hi%20Tadal%20Studio!%20I%20just%20submitted%20a%20booking%20request%20and%20have%20a%20few%20questions%20about%20my%20project.%20Looking%20forward%20to%20hearing%20from%20you!"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-all duration-300"
