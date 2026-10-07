@@ -2,7 +2,7 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 
-const WA_NUMBER_INTL = "60174062788"; // +60 17 406 2788
+import { WA_NUMBER_INTL } from "@/lib/whatsapp";
 
 type QuickOption = {
   id: string;
