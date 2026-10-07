@@ -280,12 +280,12 @@ export default function HomePageClient({ children }: HomePageClientProps) {
               <div
                 className="inline-flex items-center gap-2 px-3 py-0.5 rounded-full bg-olive-800/70 border border-olive-400/50 text-slate-100 text-sm shadow-sm backdrop-blur-sm hover:border-olive-300/60 transition-colors max-w-fit"
                 role="listitem"
-                aria-label="7 day delivery option"
+                aria-label="Launch from 7 days"
               >
                 <span className="material-symbols-outlined text-accent/50 text-xs leading-none">
                   schedule
                 </span>
-                <span className="font-medium">Go-Live in 7 Days</span>
+                <span className="font-medium">Launch from 7 days</span>
               </div>
 
               <div
@@ -495,6 +495,10 @@ export default function HomePageClient({ children }: HomePageClientProps) {
                 <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-accent">
                   From Plan to Launch
                 </h2>
+                <p className="text-base text-slate-200 max-w-lg mb-4">
+                  Your timeline starts once we have all your content. You review
+                  once on staging, in up to 2 rounds.
+                </p>
                 <p className="text-lg text-gray-300 max-w-lg leading-relaxed mb-6">
                   A focused, repeatable process that aligns goals, designs
                   solutions, and ships measurable results — with minimal
@@ -547,9 +551,8 @@ export default function HomePageClient({ children }: HomePageClientProps) {
                       <div className="text-slate-100 font-semibold">Design</div>
                     </div>
                     <p className="mt-2 text-slate-400 text-sm">
-                      We map information architecture, produce wireframes and
-                      high-fidelity screens, and validate interactions with a
-                      prototype so stakeholders can preview the flow.
+                      We map your pages and build the design straight into a
+                      private staging site you can click through.
                     </p>
                   </div>
                 </li>
@@ -563,9 +566,8 @@ export default function HomePageClient({ children }: HomePageClientProps) {
                       <div className="text-slate-100 font-semibold">Build</div>
                     </div>
                     <p className="mt-2 text-slate-400 text-sm">
-                      Implement components and pages, connect integrations, and
-                      run QA. We deliver incremental builds so you can review
-                      early and often.
+                      We build, connect integrations and run QA before you see
+                      it.
                     </p>
                   </div>
                 </li>
@@ -596,8 +598,8 @@ export default function HomePageClient({ children }: HomePageClientProps) {
                       </div>
                     </div>
                     <p className="mt-2 text-slate-400 text-sm">
-                      Fixes and small enhancements for 30 days post-launch. We
-                      offer ongoing care plans for maintenance and growth.
+                      Fixes for 14 days after launch. Ongoing changes are
+                      covered by a Care Plan.
                     </p>
                   </div>
                 </li>
@@ -672,8 +674,9 @@ export default function HomePageClient({ children }: HomePageClientProps) {
               </summary>
               <div className="mt-2">
                 <p>
-                  Landing Page 5 to 7 days. Professional Website 10 to 14 days.
-                  Custom timelines depend on scope.
+                  Landing Page: 5–7 days. Professional Website: 10–14 days.
+                  Custom Web System: by scope. All timelines count from when we
+                  have your content.
                 </p>
                 <div className="mt-3 flex gap-3">
                   <SecondaryCTA href="/planner?tier=landing">
@@ -701,7 +704,8 @@ export default function HomePageClient({ children }: HomePageClientProps) {
               </summary>
               <div className="mt-2">
                 <p>
-                  Yes. We refine your draft and supply sections that convert.
+                  We polish the copy you give us for free. Want us to write it
+                  from scratch? That&apos;s the Copywriting add-on.
                 </p>
               </div>
             </details>
@@ -765,12 +769,56 @@ export default function HomePageClient({ children }: HomePageClientProps) {
               </summary>
               <div className="mt-2">
                 <p>
-                  Fifty percent to start, fifty percent on launch. Bank transfer
-                  in Malaysia. Stripe or Wise for international payments.
+                  50% to start, 50% when you approve the staging site, before
+                  launch. Bank transfer in Malaysia; Stripe or Wise for
+                  international payments.
                 </p>
                 <div className="mt-3">
                   <PrimaryCTA href="/contact">Get a quote</PrimaryCTA>
                 </div>
+              </div>
+            </details>
+
+            <details
+              className="bg-olive-950/30 border border-olive-800/40 rounded-lg p-4"
+              open={openFAQ === 6}
+            >
+              <summary
+                className="cursor-pointer font-semibold text-white text-lg"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpenFAQ(openFAQ === 6 ? null : 6);
+                }}
+              >
+                How many changes can I ask for?
+              </summary>
+              <div className="mt-2">
+                <p>
+                  Two review rounds, each sent as one batch of comments from one
+                  person. Fixes like typos or broken links are always free. New
+                  pages or features are quoted separately.
+                </p>
+              </div>
+            </details>
+
+            <details
+              className="bg-olive-950/30 border border-olive-800/40 rounded-lg p-4"
+              open={openFAQ === 7}
+            >
+              <summary
+                className="cursor-pointer font-semibold text-white text-lg"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpenFAQ(openFAQ === 7 ? null : 7);
+                }}
+              >
+                What happens after launch?
+              </summary>
+              <div className="mt-2">
+                <p>
+                  We fix anything that&apos;s broken for 14 days. After that, a
+                  Care Plan covers updates, or we quote new work.
+                </p>
               </div>
             </details>
           </div>
