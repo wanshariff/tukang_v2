@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/tukang-design-social-share.jpg",
+        url: "/tadal-social-share.jpg",
         width: 1200,
         height: 630,
         alt: "TADAL STUDIO – Our Work",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Web Design Portfolio Malaysia | Selected Projects | TADAL STUDIO",
     description:
       "See selected projects we've delivered for SMEs and startups in Malaysia and beyond.",
-    images: ["/tukang-design-social-share.jpg"],
+    images: ["/tadal-social-share.jpg"],
   },
   alternates: { canonical: "/work" },
 };

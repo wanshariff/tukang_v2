@@ -106,7 +106,7 @@ export async function generateMetadata({
       description: post.excerpt,
       images: post.mainImage
         ? [post.mainImage.asset.url]
-        : ["https://tukang.design/tukang-design-social-share.jpg"],
+        : ["/tadal-social-share.jpg"],
       type: "article",
     },
     twitter: {
@@ -115,7 +115,7 @@ export async function generateMetadata({
       description: post.excerpt,
       images: post.mainImage
         ? [post.mainImage.asset.url]
-        : ["https://tukang.design/tukang-design-social-share.jpg"],
+        : ["/tadal-social-share.jpg"],
     },
   };
 }

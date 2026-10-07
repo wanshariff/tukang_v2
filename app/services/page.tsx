@@ -2,6 +2,11 @@
 import React from "react";
 import { PrimaryCTA } from "../components/CTAButton";
 import { DeliverableIcon } from "../components/Icons";
+import { ADD_ONS, type TierId } from "@/lib/planner-config";
+
+// Add-on chips come straight from the planner config so names always match.
+const addOnsFor = (tier: TierId) =>
+  ADD_ONS.filter((a) => a.tiers.includes(tier));
 
 // Note: Since this is a client component, metadata should be handled in layout.tsx or parent server component
 // For analytics tracking, the page title is "Services - Web Design & Development"
@@ -88,7 +93,7 @@ export default function ServicesPage() {
                 1. Landing Page
               </h3>
               <span className="w-fit text-xs text-slate-100/70 py-1 px-4 bg-brown-500/30 rounded-full">
-                Live in 5 - 7 days
+                Live in 5–7 days from content received
               </span>
             </div>
 
@@ -124,7 +129,7 @@ export default function ServicesPage() {
                             </span>
                             <div className="group">
                               <div className="mt-4 text-slate-400 text-sm">
-                                Day 2: Wireframe
+                                Day 2: Structure
                               </div>
                             </div>
                           </li>
@@ -135,7 +140,7 @@ export default function ServicesPage() {
                             </span>
                             <div className="group">
                               <div className="mt-4 text-slate-400 text-sm">
-                                Day 3: Design
+                                Day 3: Design in staging
                               </div>
                             </div>
                           </li>
@@ -150,6 +155,17 @@ export default function ServicesPage() {
                               </div>
                             </div>
                           </li>
+                          {/* Step 5 */}
+                          <li className="mb-6 ml-6">
+                            <span className="absolute -left-3 flex items-center justify-center w-6 h-6 rounded-full bg-accent text-olive-950 ring-4 ring-olive-800">
+                              5
+                            </span>
+                            <div className="group">
+                              <div className="mt-4 text-slate-400 text-sm">
+                                Day 5: Review
+                              </div>
+                            </div>
+                          </li>
                           {/* Step 6 */}
                           <li className="mb-6 ml-6">
                             <span className="absolute -left-3 flex items-center justify-center w-6 h-6 rounded-full bg-accent text-olive-950 ring-4 ring-olive-800">
@@ -157,22 +173,14 @@ export default function ServicesPage() {
                             </span>
                             <div className="group">
                               <div className="mt-4 text-slate-400 text-sm">
-                                Day 6: Review & Feedbacks
-                              </div>
-                            </div>
-                          </li>
-                          {/* Step 7 */}
-                          <li className="mb-6 ml-6">
-                            <span className="absolute -left-3 flex items-center justify-center w-6 h-6 rounded-full bg-accent text-olive-950 ring-4 ring-olive-800">
-                              7
-                            </span>
-                            <div className="group">
-                              <div className="mt-4 text-slate-400 text-sm">
-                                Day 5: Launch & Support
+                                Day 6–7: Launch
                               </div>
                             </div>
                           </li>
                         </ol>
+                        <p className="mt-2 text-xs text-slate-400">
+                          Days count from when we have all your content.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -206,7 +214,7 @@ export default function ServicesPage() {
                       </li>
                       <li className="flex items-start gap-3">
                         <DeliverableIcon />
-                        <span>One revision</span>
+                        <span>2 review rounds</span>
                       </li>
                     </ul>
                     <details className="md:hidden mb-2 bg-olive-900/30 rounded p-2">
@@ -252,7 +260,7 @@ export default function ServicesPage() {
                         </li>
                         <li className="flex items-start gap-3">
                           <DeliverableIcon />
-                          <span>One revision</span>
+                          <span>2 review rounds</span>
                         </li>
                       </ul>
                     </details>
@@ -262,15 +270,14 @@ export default function ServicesPage() {
                         AVAILABLE ADD-ONS
                       </h4>
                       <div className="flex flex-wrap gap-2 mt-2">
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Brand Identity Starter
-                        </span>
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Content and Copywriting
-                        </span>
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Motion
-                        </span>
+                        {addOnsFor("landing").map((a) => (
+                          <span
+                            key={a.id}
+                            className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full"
+                          >
+                            {a.label}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -299,10 +306,10 @@ export default function ServicesPage() {
           >
             <div className="flex items-start justify-between gap-2 mb-4">
               <h3 className="text-3xl font-bold text-accent/80">
-                2. Professional Business Website
+                2. Professional Website
               </h3>
               <span className="w-fit text-xs text-slate-100/70 py-1 px-4 bg-brown-500/30 rounded-full">
-                Live in 10 - 14 days
+                Live in 10–14 days from content received
               </span>
             </div>
 
@@ -382,7 +389,7 @@ export default function ServicesPage() {
                       </li>
                       <li className="flex items-start gap-3">
                         <DeliverableIcon />
-                        <span>Two revisions</span>
+                        <span>2 review rounds</span>
                       </li>
                     </ul>
 
@@ -391,15 +398,14 @@ export default function ServicesPage() {
                         AVAILABLE ADD-ONS
                       </h4>
                       <div className="flex flex-wrap gap-2 mt-2">
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Lite Pack Design System
-                        </span>
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Analytics and SEO
-                        </span>
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Online Store Setup
-                        </span>
+                        {addOnsFor("business").map((a) => (
+                          <span
+                            key={a.id}
+                            className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full"
+                          >
+                            {a.label}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -412,7 +418,7 @@ export default function ServicesPage() {
                   Price starts from
                 </div>
                 <div className="text-accent/50 text-2xl font-semibold">
-                  RM1,500
+                  RM3,000
                 </div>
               </div>
               <PrimaryCTA href="/planner?tier=business" className="min-w-[50%]">
@@ -519,15 +525,14 @@ export default function ServicesPage() {
                         AVAILABLE ADD-ONS
                       </h4>
                       <div className="flex flex-wrap gap-2 mt-2">
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Payments and Subscriptions
-                        </span>
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Analytics and Experiments
-                        </span>
-                        <span className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full">
-                          Accessibility Review
-                        </span>
+                        {addOnsFor("advanced").map((a) => (
+                          <span
+                            key={a.id}
+                            className="text-xs px-3 py-1 bg-olive-900 text-slate-300 rounded-full"
+                          >
+                            {a.label}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>

@@ -107,14 +107,14 @@ async function sendBookingNotification(bookingData, submissionId, websiteType) {
   const mailOptions = {
     from: process.env.EMAIL_FROM || bookingData.contactInfo.email,
     replyTo: bookingData.contactInfo.email,
-    to: process.env.CONTACT_TO || "studio@tukang.design",
+    to: process.env.CONTACT_TO || "tadalstudio.my@gmail.com",
     subject: `New ${websiteType} Booking - ${submissionId}`,
     html: emailContent,
   };
 
   try {
     await sendEmail(mailOptions);
-    console.log("Email notification sent successfully to studio@tukang.design");
+    console.log("Email notification sent successfully to tadalstudio.my@gmail.com");
     return true;
   } catch (emailError) {
     console.error("Failed to send email notification:", emailError);
@@ -250,7 +250,7 @@ export async function POST(request) {
       documentId = `fallback_${submissionId}`;
     }
 
-    // Send email notification to studio@tukang.design
+    // Send email notification to tadalstudio.my@gmail.com
     const emailSent = await sendBookingNotification(
       bookingData,
       submissionId,

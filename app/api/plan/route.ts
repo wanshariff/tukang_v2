@@ -63,11 +63,11 @@ export async function POST(request: Request) {
       // Send estimate link/email to client if allowed
       try {
         const adminEmail =
-          process.env.ADMIN_NOTIFICATION_EMAIL || "syazwan@tadalstudio.com";
+          process.env.ADMIN_NOTIFICATION_EMAIL || "tadalstudio.my@gmail.com";
         const from =
           process.env.SMTP_FROM ||
           process.env.EMAIL_FROM ||
-          "studio@tukang.design";
+          "tadalstudio.my@gmail.com";
 
         const clientEmail = answers.contact.email;
         const baseUrl =

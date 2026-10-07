@@ -105,9 +105,8 @@ export default function AboutPageClient() {
                         </h4>
                       </div>
                       <p className="mt-2 text-slate-400 text-sm">
-                        We map information architecture, produce wireframes and
-                        high-fidelity screens, and validate interactions with a
-                        prototype so stakeholders can preview the flow.
+                        We map your pages and build the design straight into a
+                        private staging site you can click through.
                       </p>
                     </div>
                   </li>
@@ -120,9 +119,8 @@ export default function AboutPageClient() {
                         </h4>
                       </div>
                       <p className="mt-2 text-slate-400 text-sm">
-                        Implement components and pages, connect integrations,
-                        and run QA. We deliver incremental builds so you can
-                        review early and often.
+                        We build, connect integrations and run QA before you
+                        see it.
                       </p>
                     </div>
                   </li>
@@ -149,8 +147,8 @@ export default function AboutPageClient() {
                         </h4>
                       </div>
                       <p className="mt-2 text-slate-400 text-sm">
-                        Fixes and small enhancements for 30 days post-launch. We
-                        offer ongoing care plans for maintenance and growth.
+                        Fixes for 14 days after launch. Ongoing changes are
+                        covered by a Care Plan.
                       </p>
                     </div>
                   </li>
@@ -196,8 +194,9 @@ export default function AboutPageClient() {
 
               <div className="mt-6 text-xs text-slate-500">
                 <p>
-                  Disclosure: Experience shown may include work delivered by
-                  team members in prior roles.
+                  Before Tadal, our team led projects at Big 4 consultancies,
+                  GLCs and MNCs. Work from those roles is labelled &apos;prior
+                  role&apos;.
                 </p>
               </div>
 

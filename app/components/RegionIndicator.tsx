@@ -99,7 +99,8 @@ export default function RegionIndicator() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 z-40 animate-fade-in">
+    // Sits above the WhatsApp FAB (bottom-5/md:bottom-6, 56px tall) instead of under it
+    <div className="fixed bottom-[88px] right-4 md:bottom-24 md:right-6 z-40 animate-fade-in">
       <div className="bg-olive-dark/90 backdrop-blur-sm border border-accent/20 rounded-lg px-4 py-2 shadow-lg">
         <div className="flex items-center gap-2 text-sm">
           {isDetecting ? (

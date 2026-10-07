@@ -13,7 +13,7 @@ async function sendWithResend(opts: EmailOptions) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) throw new Error("RESEND_API_KEY missing");
 
-  const from = opts.from || process.env.EMAIL_FROM || "studio@tukang.design";
+  const from = opts.from || process.env.EMAIL_FROM || "tadalstudio.my@gmail.com";
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {

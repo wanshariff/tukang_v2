@@ -13,9 +13,9 @@ interface SEOProps {
 
 export const SEO: React.FC<SEOProps> = ({
   title = "TADAL STUDIO - End-to-End Design & Development | Full-stack Designer Malaysia",
-  description = "Tired of the handoff headache? TADAL STUDIO offers a seamless, end-to-end web design and development service. Get a flawless website from a single expert.",
+  description = "Websites for Malaysian businesses. Strategy, design and code in one team, with the price and launch date agreed before you pay.",
   keywords = "end-to-end design development, full-stack designer malaysia, web design shah alam, complete digital solutions, custom web development, full-stack development malaysia, design to development services",
-  ogImage = "https://tukang.design/tukang-design-social-share.jpg",
+  ogImage = "https://tadalstudio.com/tadal-social-share.jpg",
   ogUrl,
   canonical,
   structuredData,
@@ -50,7 +50,6 @@ export const SEO: React.FC<SEOProps> = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
-      <meta name="twitter:site" content="@tukangdesign" />
 
       {/* Additional Meta Tags */}
       <meta name="theme-color" content="#000000" />
@@ -87,12 +86,6 @@ export const SEO: React.FC<SEOProps> = ({
           }}
         />
       )}
-
-      {/* Google Site Verification */}
-      <meta
-        name="google-site-verification"
-        content="YOUR_GOOGLE_VERIFICATION_CODE"
-      />
 
       {/* Preconnect to External Domains */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -31,10 +31,10 @@ export default function PrivacyPage() {
         <li>
           Contact us at{" "}
           <a
-            href="mailto:hello@tukang.studio"
+            href="mailto:tadalstudio.my@gmail.com"
             className="text-blue-600 underline"
           >
-            hello@tukang.studio
+            tadalstudio.my@gmail.com
           </a>
         </li>
       </ul>

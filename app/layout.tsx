@@ -36,7 +36,7 @@ export const metadata = {
   ),
   title: "End-to-End Web Design & Development | TADAL STUDIO",
   description:
-    "Tired of the handoff headache? TADAL STUDIO offers a seamless, end-to-end web design and development service. Get a flawless website from a single expert.",
+    "Websites for Malaysian businesses. Strategy, design and code in one team, with the price and launch date agreed before you pay.",
   keywords:
     "end-to-end design development, full-stack designer malaysia, web design shah alam, complete digital solutions, custom web development, full-stack development malaysia, design to development services",
   robots: "index, follow",
@@ -66,14 +66,14 @@ export const metadata = {
   openGraph: {
     title: "End-to-End Web Design & Development | TADAL STUDIO",
     description:
-      "Tired of the handoff headache? TADAL STUDIO offers a seamless, end-to-end web design and development service. Get a flawless website from a single expert.",
+      "Websites for Malaysian businesses. Strategy, design and code in one team, with the price and launch date agreed before you pay.",
     url: process.env.NEXT_PUBLIC_BASE_URL || "https://tadalstudio.com",
     siteName: "TADAL STUDIO",
     images: [
       {
         url: `${
           process.env.NEXT_PUBLIC_BASE_URL || "https://tadalstudio.com"
-        }/tukang-design-social-share.jpg`,
+        }/tadal-social-share.jpg`,
         width: 1200,
         height: 630,
         alt: "TADAL STUDIO - End-to-End Web Design & Development",
@@ -86,18 +86,15 @@ export const metadata = {
     card: "summary_large_image",
     title: "End-to-End Web Design & Development | TADAL STUDIO",
     description:
-      "Tired of the handoff headache? TADAL STUDIO offers a seamless, end-to-end web design and development service. Get a flawless website from a single expert.",
+      "Websites for Malaysian businesses. Strategy, design and code in one team, with the price and launch date agreed before you pay.",
     images: [
-      process.env.NEXT_PUBLIC_BASE_URL ||
-        "https://tadalstudio.com/tukang-design-social-share.jpg",
+      `${
+        process.env.NEXT_PUBLIC_BASE_URL || "https://tadalstudio.com"
+      }/tadal-social-share.jpg`,
     ],
-    site: "@tukangdesign",
   },
   alternates: {
     canonical: process.env.NEXT_PUBLIC_BASE_URL || "https://tadalstudio.com",
-  },
-  verification: {
-    google: "YOUR_GOOGLE_VERIFICATION_CODE",
   },
 };
 

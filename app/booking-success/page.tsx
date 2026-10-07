@@ -130,7 +130,7 @@ function BookingSuccessContent() {
               WhatsApp!
             </p>
             <a
-              href="https://wa.me/60174062788?text=Hi%20Tukang%20Design!%20I%20just%20submitted%20a%20booking%20request%20and%20have%20a%20few%20questions%20about%20my%20project.%20Looking%20forward%20to%20hearing%20from%20you!"
+              href="https://wa.me/60194176182?text=Hi%20Tadal%20Studio!%20I%20just%20submitted%20a%20booking%20request%20and%20have%20a%20few%20questions%20about%20my%20project.%20Looking%20forward%20to%20hearing%20from%20you!"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-all duration-300"
@@ -167,17 +167,17 @@ function BookingSuccessContent() {
             <p className="text-sm text-gray-400">
               Questions? Contact us at{" "}
               <a
-                href="mailto:studio@tukang.design"
+                href="mailto:tadalstudio.my@gmail.com"
                 className="text-accent hover:underline"
               >
-                studio@tukang.design
+                tadalstudio.my@gmail.com
               </a>{" "}
               or{" "}
               <a
-                href="tel:+60174062788"
+                href="tel:+60194176182"
                 className="text-accent hover:underline"
               >
-                +60 17-406 2788
+                +60 19-417 6182
               </a>
             </p>
           </div>

@@ -2,8 +2,10 @@
 
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { SecondaryCTA, WhatsAppCTA, ArrowRightIcon } from "./CTAButton";
+import { whatsAppPageLink } from "@/lib/whatsapp";
 
 // Enhanced Tailwind Block Navigation Component
 function NavLink({
@@ -94,6 +96,7 @@ function MobileMenu({
   isOpen: boolean;
   onClose: () => void;
 }) {
+  const pathname = usePathname();
   if (!isOpen) return null;
 
   return (
@@ -196,7 +199,7 @@ function MobileMenu({
           </SecondaryCTA>
 
           <WhatsAppCTA
-            href="https://wa.me/60174062788"
+            href={whatsAppPageLink(pathname)}
             external
             className="w-full py-4 text-lg"
             onClick={onClose}

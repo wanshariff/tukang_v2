@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/tukang-design-social-share.jpg",
+        url: "/tadal-social-share.jpg",
         width: 1200,
         height: 630,
         alt: "TADAL STUDIO – Web Design Packages in Malaysia",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Web Design Packages in Malaysia | TADAL STUDIO",
     description:
       "Clear scope and pricing for Malaysian SMEs. Start small, ship fast, and grow with add-ons or a care plan.",
-    images: ["/tukang-design-social-share.jpg"],
+    images: ["/tadal-social-share.jpg"],
   },
   alternates: {
     canonical: "/services",

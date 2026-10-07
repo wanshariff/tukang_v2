@@ -233,7 +233,7 @@ export async function GET(request) {
                               <h3 class="text-lg font-semibold text-white mb-3">Questions?</h3>
                               <p class="text-gray-300 mb-4">Our team is here to help. Get in touch anytime:</p>
                               <div class="flex flex-col sm:flex-row gap-4">
-                                  <a href="mailto:studio@tukang.design" 
+                                  <a href="mailto:tadalstudio.my@gmail.com" 
                                      class="inline-flex items-center px-4 py-2 bg-accent text-white rounded-lg hover:bg-emerald-600 transition-colors">
                                       <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -305,7 +305,7 @@ export async function GET(request) {
       <body>
         <div class="container">
           <h1>❌ Error</h1>
-          <p>Unable to process quote acceptance. Please contact studio@tukang.design for assistance.</p>
+          <p>Unable to process quote acceptance. Please contact tadalstudio.my@gmail.com for assistance.</p>
           <p style="opacity: 0.7;">Error: ${error.message}</p>
         </div>
       </body>

@@ -45,11 +45,11 @@ export async function POST(request: Request) {
         process.env.SMTP_FROM ||
         process.env.SMTP_USER ||
         process.env.EMAIL_FROM ||
-        "syazwan@tadalstudio.com",
+        "tadalstudio.my@gmail.com",
       to:
         process.env.CONTACT_TO ||
         process.env.SMTP_USER ||
-        "syazwan@tadalstudio.com",
+        "tadalstudio.my@gmail.com",
       replyTo: email,
       subject: `Contact — ${projectType ? projectType + " — " : ""}${name}`,
       text: `New contact submission\n\nName: ${name}\nEmail: ${email}\n${
